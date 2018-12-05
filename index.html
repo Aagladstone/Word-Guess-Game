@@ -9,40 +9,115 @@
 </head>
 <body>
 
+    <header> <h1> Hiesman Hangman!</h1>
+        <br>
+        <div>
+        <img src="http://a.espncdn.com/combiner/i?img=%2Fphoto%2F2014%2F0902%2Fncf_g_heis77_cr_1296x729.jpg" height="150" width="150">
+        </div>
+    </header> 
+
+    <div>
+    <h2>Press Any Key To Get Started!</h2>
+    </div>
+    <div class="container">
         <script type="text/javascript">
 
-    var wordBank = ["Steve Spurrier", "Gary Beban", "OJ Simpson", "Steve Owens", "Jim Plunkett", "Pat Sullivan", 
+        document.write("Wins: " + wins);
+
+        document.write("Number of Guesses: "+ //function? or guessesleft);
+
+        document.write("Already Guessed:" + Guesses);
+            
+    var Guesses = ["A", "B", "C"]
+
+    var Wins = 
+
+    var Reset = 
+
+    var RandomHiesman = 
+
+    var GuessesLeft = 
+
+    var WordBank = ["Steve Spurrier", "Gary Beban", "OJ Simpson", "Steve Owens", "Jim Plunkett", "Pat Sullivan", 
                     "Johnny Rodgers", "John Cappeletti", "Archie Griffin", "Tony Dorsett", "Earl Campbell", "Billy Sims",
                     "Charles White", 'George Rogers", "Marcus Allen", "Herschel Walker", "Mike Rozier", "Doug Flutie", 
                     "Bo Jackson", "Vinny Testaverde", "Tim Brown", "Barry Sanders", "Andre Ware", "Ty Detmer", "Desmond Howard", 
                     "Charlie Ward", "Gino Torretta", "Rashaan Salaam", "Eddie George", "Danny Wuerffel", "Charles Woodson", 
-                    "Ricky Williams", "Ron Dayne", "Chris Weinke", "Eric Couch", "Carson Palmer", "Jason White", 
+                    "Ricky Williams", "Ron Dayne", "Chris Weinke", "Eric Crouch", "Carson Palmer", "Jason White", "Reggie Bush"
                     "Matt Leinart", "Troy Smith", "Tim Tebow", "Sam Bradford", "Mark Ingram Jr", "Cam Newton", 
                     "Robert Griffin III", "Johnny Manziel", "Jameis Winston", "Marcus Mariota", "Derrick Henry",
-                    "Lamar Jackson", "Baker Mayfield"]
-
-    
+                    "Lamar Jackson", "Baker Mayfield", "Kyler Murray", "Tua Tagovailoa", "Dwayne Haskins"]
+  
+  function printWordBank() {
+      var RandomHiesman = document
+  }
+                    console.log(Math.random(51));
+    </div>
 </body>
 </html>
 
 // Watch the demo.
 
 // Choose a theme for your game! In the demo, we picked an 80s theme: 80s questions, 80s sound and an 80s aesthetic. You can choose any subject for your theme, though, so be creative!
-
+                    //My theme is Hiesman Hangman// //Word bank is all the Hiesman winners// //green, yellow, bronze. I want pictures and videos or audio of each one when guessed. 
 // Use key events to listen for the letters that your players will type.
 
 // Display the following on the page:
 
-// Press any key to get started!
+// Press any key to get started! HTML "Press any key to get started!" 
 
-// Wins: (# of times user guessed the word correctly).
+// Wins: (# of times user guessed the word correctly). "wins: varWins" number
 
-// If the word is madonna, display it like this when the game starts: _ _ _ _ _ _ _.
+// If the word is madonna, display it like this when the game starts: _ _ _ _ _ _ _. "Current Word: varWordBank" document.write: varWordBank 
+                        //var answer = "letter"
 
-// As the user guesses the correct letters, reveal them: m a d o _ _ a.
+// As the user guesses the correct letters, reveal them: m a d o _ _ a. 
 
-// Number of Guesses Remaining: (# of guesses remaining for the user).
+// Number of Guesses Remaining: (# of guesses remaining for the user). "Number of Guesses Remaining: varGuessesRemain" number
 
-// Letters Already Guessed: (Letters the user has guessed, displayed like L Z Y H).
+// Letters Already Guessed: (Letters the user has guessed, displayed like L Z Y H). "Letters Already Guessed: varLettersGuessed"
 
-// After the user wins/loses the game should automatically choose another word and make the user play it.
+
+//FUNCTION: takes win var and + 1, then reset letters guessed and guesses remaining. 
+// After the user wins/loses the game should automatically choose another word and make the user play it. varReset if varGuessesRemain = 0 set choose another varWordBank.
+
+//document.getElementById("button1").addEventListener("click", function(){
+
+ //   document.getElementById("box").style.height = "350px";
+  //  document.getElementById("box").style.width = "350px";
+
+//});
+
+
+//------------------------------------------------------------------------------------------------------
+
+
+//press a button
+
+//User gets a word in which each letter is underlined.   COMP NEEDS TO PULL WORD FROM ARRAY THEN WORRY ABOUT UNDERLINES AND NOT SHOWING IT. 
+                                                        // parseint()
+                                                        //funcion printWordBank();
+//User presses a key.
+
+//scenario 1: Letter is correct. Shows up on top. 
+//Scenario 2: Letter is incorrect. Shows up on "Already Guessed".
+
+//Scenario 1: Letter is correct. Guesses doesn't go down. 
+//Scenario 2: Letter is incorrect. Guesses left goes down one. 
+
+//User presses another key: 
+//scenario 1: Letter is correct. Shows up on top.
+//Scenario 2: Letter is incorrect. Shows up on "Already Guessed".
+
+//Scenario 1: Letter is correct. Guesses doesn't go down. 
+//Scenario 2: Letter is incorrect. Guesses left goes down one.
+
+//Repeated until:
+
+//Scenario 1: All letters are filled. 
+//Scenario 2: Guesses left hit 0.
+
+//Scenario 1: Picture (and maybe video?) appears, Wins ticks up one.
+//Scenario 2: Nothing happens
+
+//Scenario 1&2: Game Resets. 
